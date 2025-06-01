@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 
 .container {
@@ -85,7 +86,7 @@
 }
 
 .box {
-    width: 48%;
+    width: 45%;
     border-radius: 10px;
     height: 48%;
     display: flex;
@@ -276,7 +277,7 @@
 }
 
 .projects-box {
-    width: 28%;
+    width: 32%;
     border-radius: 10px;
     height: auto;
     padding: 15px;
@@ -427,7 +428,7 @@
 }
 
 .certificate-box {
-    width: 29%;
+    width: 32%;
     border-radius: 10px;
     height: auto;
     padding: 15px;
@@ -487,9 +488,6 @@
     background: none;
     border: none;
 }
-
-
-
 
 
 
@@ -634,7 +632,7 @@
     }
 
     .projects-box{
-        width: 45%;
+        width: 48%;
     }
 
 
@@ -660,17 +658,35 @@
     }
 
 
-    .skills-box {
-        width: 45%; 
+    .projects-box,
+    .certificate-box {
+        width: 100%;
     }
 
     .projects-skill > button,
     .certificate-skill > button {
-        width: 100%;
+        width: 45%;
     }
 
     .certificate-title > h2 {
         font-size: 1.5rem;
+    }
+
+    .right-content {
+        padding: 10px 0 0 0;
+    }
+
+    .projects-box{
+        width: 98%;
+    }
+
+    .projects {
+        flex-direction: column;
+    }
+
+    .awards-box {
+        flex-direction: column;
+        align-items: flex-start;
     }
 }
 
