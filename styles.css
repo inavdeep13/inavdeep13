@@ -1,6 +1,6 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+    margin: 0px;
+    padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
@@ -9,16 +9,20 @@
     padding: 20px;
 }
 
+
+
 #home {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .intro {
     width: 50%;
+    padding: 10px;
 }
 
-.name > h1 {
+.name>h1 {
     font-size: 3.75rem;
     line-height: 1;
 }
@@ -31,7 +35,7 @@
     padding: 10px 0px;
 }
 
-.title > p {
+.title>p {
     font-size: 1.5rem;
     line-height: 2rem;
     color: #4b5563;
@@ -45,7 +49,7 @@
 
 
 
-.tech-stack{
+.tech-stack {
     color: #000;
     font-size: 1.25rem;
     line-height: 2rem;
@@ -57,14 +61,14 @@
     gap: 15px;
 }
 
-.stack-icons > button {
+.stack-icons>button {
     border: 1px solid;
     border-radius: 50px;
     padding: 10px 20px;
     color: #fff;
 }
 
-.html{
+.html {
     background: #eab308;
 }
 
@@ -79,16 +83,17 @@
 .feat-box {
     display: flex;
     flex-wrap: wrap;
+    align-items: stretch;
     width: 50%;
-    height: auto;
-    padding: 15px;
     gap: 20px;
 }
 
 .box {
-    width: 45%;
+    width: 48%; 
+    min-height: 150px; 
+    padding: 20px;
+    box-sizing: border-box;
     border-radius: 10px;
-    height: 48%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -98,7 +103,7 @@
     border: #111111 solid 1px;
 }
 
-.web-dev{
+.web-dev {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -106,7 +111,7 @@
     gap: 20px;
 }
 
-.web-dev > img {
+.web-dev>img {
     width: 60px;
     height: 50px;
 }
@@ -119,7 +124,7 @@
     gap: 20px;
 }
 
-.performance > img {
+.performance>img {
     width: 60px;
     height: 50px;
 }
@@ -132,7 +137,7 @@
     background: #fde7ef;
 }
 
-.uiux > img {
+.uiux>img {
     width: 60px;
     height: 50px;
 }
@@ -145,20 +150,23 @@
     background: #fdf2dc;
 }
 
-.security > img {
+.security>img {
     width: 60px;
     height: 50px;
 }
+
+
+
 
 
 .about-title {
     text-align: center;
     padding: 70px 0px 30px 0px;
     font-size: 1.875rem;
-    line-height: 2.25rem;    
+    line-height: 2.25rem;
 }
 
-.about-section{
+.about-section {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -170,7 +178,7 @@
     text-align: center;
 }
 
-.about-description > p {
+.about-description>p {
     font-size: 1rem;
     line-height: 1.5rem;
     color: #4b5563;
@@ -178,8 +186,7 @@
     text-align: left;
 }
 
-
-.skills-btn > button {
+.skills-btn>button {
     font-size: 1rem;
     line-height: 1.5rem;
     color: #fff;
@@ -191,11 +198,14 @@
 
 
 
+
+
+
 #skills {
     padding: 100px;
 }
 
-.skills-title{
+.skills-title {
     font-size: 2rem;
     line-height: 1;
     text-align: center;
@@ -203,6 +213,7 @@
 }
 
 .skills-section {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -223,7 +234,7 @@
     border: 1px solid;
 }
 
-.skills-box > img {
+.skills-box>img {
     width: 60px;
     height: auto;
     margin-bottom: 10px;
@@ -235,12 +246,16 @@
     font-size: 1em;
 }
 
-.my-work-btn{
+
+
+
+
+.my-work-btn {
     text-align: center;
     padding: 20px;
 }
 
-.my-work-btn > button {
+.my-work-btn>button {
     background: #dbeafe;
     border: 1px solid #dbeafe;
     padding: 10px 15px;
@@ -251,14 +266,14 @@
     font-weight: bolder;
 }
 
-.projects-title{
+.projects-title {
     font-size: 2.5rem;
     line-height: 1;
     text-align: center;
     color: #9732e3;
 }
 
-.work-description{
+.work-description {
     text-align: center;
     line-height: inherit;
     padding: 15px;
@@ -280,7 +295,7 @@
     width: 32%;
     border-radius: 10px;
     height: auto;
-    padding: 15px;
+    padding: 20px;
 }
 
 .projects-box-btm {
@@ -288,7 +303,7 @@
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.projects-box > img {
+.projects-box>img {
     width: 100%;
     height: 50%;
 }
@@ -299,10 +314,10 @@
     font-size: 0.875rem;
 }
 
-.projects-box > h3 {
+.projects-box>h3 {
     font-size: 1.5rem;
     padding: 10px 0px;
-} 
+}
 
 
 .projects-box-description {
@@ -321,14 +336,18 @@
     padding: 10px 0px;
 }
 
-.projects-skill > button {
+.projects-skill>button {
     width: 23%;
-    border: 1px ;
+    border: 1px;
     border-radius: 50px;
     padding: 5px;
 }
 
-#awards{
+
+
+
+
+#awards {
     padding: 40px 30px;
 }
 
@@ -339,7 +358,7 @@
     margin: 40px 0px 40px;
 }
 
-.awards-section{
+.awards-section {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -362,14 +381,14 @@
     border: 1px solid #000;
 }
 
-.left-content{
+.left-content {
     display: flex;
     gap: 15px;
     align-items: center;
     flex: 1;
 }
 
-.awards-box > img  {
+.awards-box>img {
     width: 60px;
     height: 60px;
     object-fit: contain;
@@ -383,7 +402,7 @@
     padding: 0px 20px;
 }
 
-.right-content > h3 {
+.right-content>h3 {
     font-weight: bold;
     font-size: 1rem;
     margin-bottom: 4px;
@@ -405,6 +424,11 @@
     color: #3b82f6;
     font-weight: bold;
 }
+
+
+
+
+
 
 #certificates {
     padding: 20px 30px;
@@ -442,10 +466,10 @@
     border: 1px solid #000;
 }
 
-.certificate-box > h3 {
+.certificate-box>h3 {
     font-size: 1.5rem;
     padding: 10px 0px;
-} 
+}
 
 .certificate-platform {
     color: #4b5563;
@@ -464,9 +488,9 @@
 }
 
 
-.certificate-skill > button {
+.certificate-skill>button {
     width: 30%;
-    border: 1px ;
+    border: 1px;
     border-radius: 50px;
     padding: 5px;
     background: #14bc78;
@@ -484,7 +508,7 @@
     border: 1px solid #000;
 }
 
-.certificate-btn > button {
+.certificate-btn>button {
     background: none;
     border: none;
 }
@@ -497,7 +521,8 @@
         align-items: center;
     }
 
-    .intro, .feat-box {
+    .intro,
+    .feat-box {
         width: 100%;
     }
 
@@ -516,27 +541,28 @@
         width: 48%;
         padding: 10px;
     }
-    
+
 
     .skills-section {
         width: 100%;
         padding: 0 10px;
+        flex-direction: row;
+         flex-wrap: wrap; 
+        gap: 10px;    
     }
 
     .skills-box {
-        width: 30%;
+        width: 48%;
     }
 
-    .projects-box, .certificate-box {
-        width: 45%;
+
+    .projects-box,
+    .certificate-box {
+        width: 48%;
     }
 
     .container {
         padding: 10px;
-    }
-
-    .certificate-box {
-        width: 42%;    
     }
 
     .projects {
@@ -548,16 +574,21 @@
 
 
 @media (max-width: 768px) {
+
+    .container {
+        padding: 10px;
+    }
+
     #home {
         padding: 30px;
         text-align: left;
     }
 
     .name > h1 {
-        font-size: 2.25rem; 
+        font-size: 2rem;
     }
 
-    .title > p,
+    .title>p,
     .profile-summary,
     .work-description,
     .certificate-platform,
@@ -572,7 +603,8 @@
 
     .feat-box {
         margin-top: 20px;
-        width: 100%;
+        max-width: 100%;
+        height: 45%;
     }
 
     .feat-box > .box {
@@ -586,13 +618,18 @@
         justify-content: center;
     }
 
-    .stack-icons > button {
+    .stack-icons>button {
         padding: 8px 16px;
         font-size: 0.9rem;
     }
 
+     .skills-section {
+        flex-wrap: wrap;  
+        gap: 10px;        
+    }
+
     .skills-box {
-        width: 45%; 
+        max-width: 45%;
     }
 
     .projects-box,
@@ -607,7 +644,7 @@
     }
 
     .about-description {
-        width: 90%;
+        max-width: 90%;
     }
 
     .skills-title,
@@ -617,9 +654,9 @@
         font-size: 1.5rem;
     }
 
-    .projects-skill > button,
-    .certificate-skill > button {
-        width: 45%;
+    .projects-skill>button,
+    .certificate-skill>button {
+       max-width: 45%;
     }
 
     .awards-box {
@@ -631,8 +668,8 @@
         padding: 10px 0 0 0;
     }
 
-    .projects-box{
-        width: 48%;
+    .projects-box {
+       max-width: 48%;
     }
 
 
@@ -645,30 +682,31 @@
 
 
 @media (max-width: 480px) {
-    .name > h1 {
+    .name>h1 {
         font-size: 2rem;
     }
 
-    .title > p {
+    .title>p {
         font-size: 1rem;
     }
 
     .tech-stack {
         font-size: 0.9rem;
     }
+    
 
 
     .projects-box,
     .certificate-box {
-        width: 100%;
+        max-width: 100%;
     }
 
-    .projects-skill > button,
-    .certificate-skill > button {
-        width: 45%;
+    .projects-skill>button,
+    .certificate-skill>button {
+        max-width: 45%;
     }
 
-    .certificate-title > h2 {
+    .certificate-title>h2 {
         font-size: 1.5rem;
     }
 
@@ -676,8 +714,8 @@
         padding: 10px 0 0 0;
     }
 
-    .projects-box{
-        width: 98%;
+    .projects-box {
+        max-width: 98%;
     }
 
     .projects {
@@ -688,6 +726,24 @@
         flex-direction: column;
         align-items: flex-start;
     }
+
+
+
+     .skills-section {
+        display: flex;         
+        flex-wrap: wrap;       
+        gap: 10px;             
+        justify-content: center;
+    }
+
+    .skills-box {
+        width: 48%;            
+        box-sizing: border-box;
+    }
+
+    .skills-box > img {
+    max-width: 100%;      
+    height: auto;
+    object-fit: contain; 
+    }
 }
-
-
