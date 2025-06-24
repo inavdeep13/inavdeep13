@@ -202,10 +202,6 @@
 }
 
 
-
-
-
-
 #skills {
     padding: 100px;
 }
@@ -304,8 +300,16 @@
     gap: 20px;
 }
 
-.projects-box {
+.project-container{
     width: 32%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.projects-box {
+    width: 100%;
     border-radius: 10px;
     height: auto;
     padding: 20px;
