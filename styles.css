@@ -89,8 +89,8 @@
 }
 
 .box {
-    width: 48%; 
-    min-height: 200px; 
+    width: 48%;
+    min-height: 200px;
     padding: 20px;
     box-sizing: border-box;
     border-radius: 10px;
@@ -297,11 +297,12 @@
     width: 100%;
     height: auto;
     padding: 15px;
-    gap: 20px;
+    gap: 10px;
 }
 
-.project-container{
+.project-container {
     width: 32%;
+    box-sizing: border-box;
 }
 
 a {
@@ -311,8 +312,12 @@ a {
 .projects-box {
     width: 100%;
     border-radius: 10px;
-    height: auto;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    box-sizing: border-box;
 }
 
 .projects-box-btm {
@@ -322,7 +327,8 @@ a {
 
 .projects-box>img {
     width: 100%;
-    height: 50%;
+    height: auto;
+    object-fit: cover;
 }
 
 .project-position {
@@ -354,10 +360,24 @@ a {
 }
 
 .projects-skill>button {
-    width: 23%;
-    border: 1px;
-    border-radius: 50px;
-    padding: 5px;
+    flex: 1 1 auto;
+    padding: 6px 12px;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    background: #f3f4f6;
+    color: #000;
+    box-sizing: border-box;
+    min-width: 70px;
+    max-width: 100%;
+}
+
+.projects-box:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    transition: all 0.3s ease-in-out;
 }
 
 
@@ -554,7 +574,7 @@ a {
     }
 
 
-    .feat-box > .box {
+    .feat-box>.box {
         width: 48%;
         padding: 10px;
     }
@@ -564,16 +584,14 @@ a {
         width: 100%;
         padding: 0 10px;
         flex-direction: row;
-         flex-wrap: wrap; 
-        gap: 10px;    
+        flex-wrap: wrap;
+        gap: 10px;
     }
 
     .skills-box {
         width: 48%;
     }
-
-
-    .projects-box,
+    
     .certificate-box {
         width: 48%;
     }
@@ -584,6 +602,14 @@ a {
 
     .projects {
         flex-direction: row;
+    }
+
+    .project-container {
+        width: 32%;
+    }
+
+    .projects-box {
+        width: 100%;
     }
 }
 
@@ -601,7 +627,7 @@ a {
         text-align: left;
     }
 
-    .name > h1 {
+    .name>h1 {
         font-size: 2rem;
     }
 
@@ -624,7 +650,7 @@ a {
         height: 45%;
     }
 
-    .feat-box > .box {
+    .feat-box>.box {
         width: 40%;
         padding: 20px;
         margin: auto;
@@ -640,9 +666,9 @@ a {
         font-size: 0.9rem;
     }
 
-     .skills-section {
-        flex-wrap: wrap;  
-        gap: 10px;        
+    .skills-section {
+        flex-wrap: wrap;
+        gap: 10px;
     }
 
     .skills-box {
@@ -673,7 +699,7 @@ a {
 
     .projects-skill>button,
     .certificate-skill>button {
-       max-width: 45%;
+        max-width: 45%;
     }
 
     .awards-box {
@@ -685,8 +711,12 @@ a {
         padding: 10px 0 0 0;
     }
 
+    .project-container {
+        width: 48%;
+    }
+
     .projects-box {
-       max-width: 48%;
+        max-width: 100%;
     }
 
 
@@ -695,11 +725,11 @@ a {
     }
 
     .skills-title {
-    padding: 20px 10px;   
-    text-align: center;   
-    margin: 0 auto;       
-    width: 100%;          
-    box-sizing: border-box;
+        padding: 20px 10px;
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+        box-sizing: border-box;
     }
 }
 
@@ -718,7 +748,7 @@ a {
     .tech-stack {
         font-size: 0.9rem;
     }
-    
+
 
 
     .projects-box,
@@ -739,8 +769,8 @@ a {
         padding: 10px 0 0 0;
     }
 
-    .projects-box {
-        max-width: 98%;
+    .project-container {
+        width: 100%;
     }
 
     .projects {
@@ -754,30 +784,30 @@ a {
 
 
 
-     .skills-section {
-        display: flex;         
-        flex-wrap: wrap;       
-        gap: 10px;             
+    .skills-section {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
         justify-content: center;
     }
 
     .skills-box {
-        width: 48%;            
+        width: 48%;
         box-sizing: border-box;
     }
 
-    .skills-box > img {
-    max-width: 100%;      
-    height: auto;
-    object-fit: contain; 
+    .skills-box>img {
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
     }
 
     .skills-title {
-    padding: 15px 10px;
-    text-align: center;
-    margin: 0 auto;
-    width: 100%;
-    box-sizing: border-box;
-    font-size: 1.10rem;
+        padding: 15px 10px;
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 1.10rem;
     }
 }
